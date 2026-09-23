@@ -14,9 +14,10 @@ img {
 header {
     background-color: #496b43;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0%;
-    gap: 15px
+    padding: 10px 0%;
+    gap: 10px
 }
 .logo {
     display: flex;
@@ -27,17 +28,32 @@ header {
     font-size: 20px;
     margin: 0;
 }
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
 nav {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 nav a {
-    font-size: 13px;
+    font-size: 20px;
+    color: #111;
+    text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
     text-decoration: underline;
+    color: #111;
 }
 
 .hero {
@@ -199,10 +215,15 @@ footer a {
         height: 65px;
         flex-direction: row;
         padding: 0 12%;
+        gap: 0;
+        align-items: center;
     }
 
     nav {
-        gap: 35px
+        gap: 35px;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
     }
 
     .hero {
