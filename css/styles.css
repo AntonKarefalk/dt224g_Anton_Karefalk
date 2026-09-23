@@ -1,3 +1,243 @@
 *{ 
-    aa
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    color: #111;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #496b43;
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    gap: 15px
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo h1 {
+    font-size: 20px;
+    margin: 0;
+}
+nav {
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    font-size: 13px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+.hero {
+    height: 350px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-button {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #496b43;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-button:hover
+.hero-button:focus {
+    background-color: #385535;
+}
+
+.intro {
+    background-color: #cce7c2;
+    text-align: center;
+    padding: 35px 8%;
+}
+
+.intro h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 8%;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #385535;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    padding: 5px 8px 10px;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.planera {
+    background-color: #496b43;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px 8%;
+}
+
+.planera h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.planera p {
+    margin: 0;
+    max-width: 500px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.planera-button {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 12px 20px;
+}
+
+.planera-button:hover,
+.planera-button:focus {
+    background-color: antiquewhite;
+}
+
+footer {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 8%;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-logo h2 {
+    font-size: 17px;
+    margin: 0;
+}
+.footer-logo p {
+    font-size: 11px;
+    margin: 2px 0;
+}
+
+footer h2 {
+    font-size: 15px;
+    margin: 0 0 5px;
+}
+
+footer p,
+footer a {
+    font-size: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 65px;
+        flex-direction: row;
+        padding: 0 12%;
+    }
+
+    nav {
+        gap: 35px
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero-button {
+        left: 7%;
+        font-size: 18px;
+    }
+
+    .intro {
+        padding: 45px 20% 40px;
+    }
+
+    .cards {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 55px;
+        padding: 40px 8%;
+    }
+
+    .card {
+        width: 30%;
+        max-width: none;
+    }
+
+    .planera {
+        flex-direction: row;
+        align-items: center;
+        padding: 25px 20%;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 20px 20%;
+    }
 }
