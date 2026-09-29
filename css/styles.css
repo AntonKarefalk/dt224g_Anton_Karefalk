@@ -45,7 +45,7 @@ nav {
     gap: 8px;
 }
 nav a {
-    font-size: 20px;
+    font-size: 15px;
     color: #111;
     text-decoration: none;
 }
@@ -175,8 +175,16 @@ footer {
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 25px;
     padding: 25px 8%;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-logo {
@@ -185,29 +193,60 @@ footer {
     align-items: center;
 }
 
-.footer-logo h2 {
-    font-size: 17px;
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text h2 {
+    font-size: 15px;
     margin: 0;
 }
-.footer-logo p {
-    font-size: 11px;
-    margin: 2px 0;
-}
-
-footer h2 {
-    font-size: 15px;
-    margin: 0 0 5px;
-}
-
-footer p,
-footer a {
+.footer-text p {
     font-size: 10px;
+    margin: 3px 0 0;
+}
+
+.footer-info {
+    display: flex;
+    gap: 50px;
+}
+
+.kontakt,
+.links {
+    text-align: left;
+}
+
+.kontakt h2,
+.links h2 {
+    font-size: 15px;
+    margin: 0 0 8px;
+}
+
+.kontakt p {
+    font-size: 13px;
+    margin: 0;
 }
 
 .links {
     display: flex;
     flex-direction: column;
     gap: 3px;
+}
+
+.links a {
+    color: #111;
+    font-size: 15px;
+}
+
+.links a:hover,
+.links a:focus {
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -260,5 +299,26 @@ footer a {
     footer {
         flex-direction: row;
         padding: 20px 20%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-brand {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-text {
+        text-align: left;
+    }
+
+    .footer-info {
+        display: flex;
+        gap: 50px;
+    }
+
+    .kontakt {
+        text-align: left;
     }
 }
